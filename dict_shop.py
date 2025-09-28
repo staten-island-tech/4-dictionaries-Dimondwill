@@ -2,11 +2,11 @@ cart = []
 price = []
 def main():
     while True:
-        dict = int(input("pick which dicionary you want, 1 2 or 3. Or do you want to proceed to checkout: "))
+        dict = (input("pick which dicionary you want, 1 2 or 3. Or do you want to proceed to checkout: "))
 
-        if dict == 1 or 2 or 3:
+        if dict in ["1", "2", "3"]:
 
-            if dict == 1:
+            if dict == "1":
                 print("this is the, animals dictonary it cost $14.99 it is 150 pages")
                 opt = input("do you want it, yes or no: ")
                 opt = str(opt)
@@ -25,6 +25,9 @@ def main():
                     elif nxt == "view cart":
                         print(f"this is your cart, dict{cart}, is costs {sum(price)}")
                         continue
+                    elif nxt == "proceed to checkout":
+                        print(f"the price comes out to {sum(price)}, now pay")
+                        break
 
                 elif opt == "no":
                     continue
@@ -32,7 +35,7 @@ def main():
                 else:
                     print("i dont understand your terminology, make sure youre not using caps")
 
-            if dict == 2:
+            if dict == "2":
                 print("this is the, cars dictonary it cost $19.99 it is 300 pages")
                 opt = input("do you want it, yes or no: ")
                 opt = str(opt)
@@ -51,13 +54,16 @@ def main():
                     elif nxt == "view cart":
                         print(f"this is your cart, dict{cart}, is costs {sum(price)}")
                         continue
+                    elif nxt == "proceed to checkout":
+                        print(f"the price comes out to {sum(price)}, now pay")
+                        break
 
                 elif opt == "no":
                     continue
                     
                 else:
                     print("i dont understand your terminology, make sure youre not using caps")
-            if dict == 3:
+            if dict == "3":
                 print("this is the, Russian dictonary it cost $49.99 it is 980 pages")
                 opt = input("do you want it, yes or no: ")
                 opt = str(opt)
@@ -76,12 +82,16 @@ def main():
                     elif nxt == "view cart":
                         print(f"this is your cart, dict{cart}, is costs {sum(price)}")
                         continue
+                    elif nxt == "proceed to checkout":
+                        print(f"the price comes out to {sum(price)}, now pay")
+                        break
 
                 elif opt == "no":
                     continue
                     
                 else:
                     print("i dont understand your terminology, make sure youre not using caps")
-        elif dict = "proceed to checkout":
-            print(f"")
+        elif dict == "proceed to checkout":
+            print(f"the price comes out to {sum(price)}, now pay")
+            break
 main()
