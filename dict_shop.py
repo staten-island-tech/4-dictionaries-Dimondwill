@@ -1,6 +1,59 @@
+
+
+store=[
+    {
+        "name": "Animals dict.",
+         "price": 14.99,
+        "page count": 150
+    },
+    {
+        "name": "cars dict.",
+        "price": 19.99,
+        "page count": 300
+    },
+    {
+        "name": "russian dict.",
+        "price": 49.99,
+        "page count": 980
+    }
+]
 cart = []
-price = []
-def main():
+price = 0
+while True:
+    for index, store in enumerate:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'''def main():
     while True:
         dict = (input("pick which dicionary you want, 1 2 or 3. Or do you want to proceed to checkout: "))
 
@@ -10,11 +63,6 @@ def main():
                 print("this is the, animals dictonary it cost $14.99 it is 150 pages")
                 opt = input("do you want it, yes or no: ")
                 opt = str(opt)
-                dict_1 = {
-                    "name": "Animals dict.",
-                    "price": 14.99,
-                    "page count": 150
-                }
 
                 if opt == "yes":
                     cart.append(dict_1["name"])
@@ -39,11 +87,7 @@ def main():
                 print("this is the, cars dictonary it cost $19.99 it is 300 pages")
                 opt = input("do you want it, yes or no: ")
                 opt = str(opt)
-                dict_2 = {
-                    "name": "cars dict.",
-                    "price": 19.99,
-                    "page count": 300
-                }
+
 
                 if opt == "yes":
                     cart.append(dict_2["name"])
@@ -67,11 +111,7 @@ def main():
                 print("this is the, Russian dictonary it cost $49.99 it is 980 pages")
                 opt = input("do you want it, yes or no: ")
                 opt = str(opt)
-                dict_3 = {
-                    "name": "russian dict.",
-                    "price": 49.99,
-                    "page count": 980
-                }
+
 
                 if opt == "yes":
                     cart.append(dict_3["name"])
@@ -94,4 +134,4 @@ def main():
         elif dict == "proceed to checkout":
             print(f"the price comes out to {sum(price)}, now pay")
             break
-main()
+main()'''
