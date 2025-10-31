@@ -1,5 +1,3 @@
-
-
 store=[
     {
         "name": "Animals dict.",
