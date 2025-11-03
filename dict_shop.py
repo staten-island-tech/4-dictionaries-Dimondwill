@@ -27,8 +27,8 @@ while True:
     print(cart,cartp)
 
     pc = input("want to proceed to checkout: ")
-    if "proceed" in pc.lower or "yes" in pc.lower:
-        print(f"you have {cart} in your cart, and it costs {cartp}")
+    if "proceed" in pc.lower() or "yes" in pc.lower():
+        print(f"you have {cart} in your cart, and it costs ${cartp}")
     elif "no" in pc:
         continue
 
